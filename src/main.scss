@@ -379,5 +379,8 @@ a {
   clear: both;
 }
 .strong-color{
-  color: #940882
+  color: #940882;
+  @media print {
+    color: #940882
+  }
 }
