@@ -100,8 +100,7 @@ a {
     padding-bottom: 5px;
     margin-bottom: 5px;
   }
-  .name,
-  .job,
+
   .info,
   .contact {
     width: 50%;
@@ -111,7 +110,12 @@ a {
     }
   }
   .name {
+    width: 30%;
     float: left;
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      text-align: center;
+    }
     h1 {
       font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
       font-weight: 500;
@@ -136,9 +140,11 @@ a {
     }
   }
   .job {
+    width: 70%;
     float: right;
     text-align: right;
     @media screen and (max-width: 720px) {
+      width: 100%;
       text-align: center;
     }
     h2 {
@@ -209,16 +215,7 @@ a {
   }
   .content-left,
   .content-right {
-    width: 50%;
-    @media screen and (max-width: 1024px) {
-      width: 100%;
-    }
-  }
-  .content-left {
-    float: left;
-  }
-  .content-right {
-    float: right;
+    width: 100%;
   }
   section {
     overflow: hidden;
@@ -295,6 +292,11 @@ a {
       position: absolute;
       top: 10px;
       right: 0;
+    }
+    .item-left {
+      position: absolute;
+      top: 10px;
+      left: 0;
     }
     .item-name {
       float: left;
